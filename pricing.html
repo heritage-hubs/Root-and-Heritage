@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs | African Heritage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = { theme: { extend: { colors: { earth: { 50: '#faf8f5', 100: '#f4ede4', 500: '#c28b5a', 800: '#5c4033', 900: '#38251e' } }, fontFamily: { serif: ['Merriweather', 'serif'], sans: ['Inter', 'sans-serif'] } } } }
+    </script>
+</head>
+<body class="bg-earth-50 text-stone-800 font-sans antialiased flex flex-col min-h-screen">
+
+    <nav class="bg-earth-900 text-earth-50 shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <a href="index.html" class="font-serif text-2xl font-bold tracking-wider text-earth-500">ROOTS & HERITAGE</a>
+                <div class="hidden md:flex space-x-8 font-medium">
+                    <a href="index.html" class="hover:text-earth-500 transition duration-300">Home</a>
+                    <a href="about.html" class="hover:text-earth-500 transition duration-300">About</a>
+                    <a href="pricing.html" class="hover:text-earth-500 transition duration-300">Programs</a>
+                    <a href="library.html" class="hover:text-earth-500 transition duration-300">Library</a>
+                    <a href="contact.html" class="hover:text-earth-500 transition duration-300">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow py-20 max-w-7xl mx-auto px-4">
+        <div class="text-center mb-16">
+            <h1 class="font-serif text-4xl md:text-5xl text-earth-900 mb-4">Hands-On Heritage Programs</h1>
+            <p class="text-xl text-stone-600 max-w-3xl mx-auto">Our role is to teach, not to do it for them. Teams of up to 8 children (ages 6-22) learn teamwork, preparation, and culinary skills, culminating in a shared family meal.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 mb-20">
+            <div class="bg-white p-8 border border-earth-100 shadow-sm hover:shadow-lg transition">
+                <h3 class="font-serif text-2xl text-earth-800 mb-2">Chicken Preparation</h3>
+                <p class="text-sm text-earth-500 font-semibold mb-6 uppercase tracking-wide">Beginner Fundamentals</p>
+                <p class="text-stone-600 mb-6">The introductory step into traditional preparation. Teams will learn humane dispatching, plucking, and from-scratch cooking over an open fire.</p>
+                <a href="#booking" class="block w-full text-center bg-earth-800 text-white py-3 font-semibold hover:bg-earth-500 transition">Book Session</a>
+            </div>
+            
+            <div class="bg-white p-8 border-2 border-earth-500 shadow-xl transform md:-translate-y-4 relative">
+                <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-earth-500 text-white px-4 py-1 text-sm font-bold tracking-wider">MOST POPULAR</div>
+                <h3 class="font-serif text-2xl text-earth-800 mb-2">Goat Preparation</h3>
+                <p class="text-sm text-earth-500 font-semibold mb-6 uppercase tracking-wide">Intermediate Teamwork</p>
+                <p class="text-stone-600 mb-6">Requires stronger coordination. Teams learn the anatomy, traditional skinning techniques, and advanced fire-cooking to serve families.</p>
+                <a href="#booking" class="block w-full text-center bg-earth-500 text-white py-3 font-semibold hover:bg-earth-800 transition">Book Session</a>
+            </div>
+
+            <div class="bg-white p-8 border border-earth-100 shadow-sm hover:shadow-lg transition">
+                <h3 class="font-serif text-2xl text-earth-800 mb-2">Cow Preparation</h3>
+                <p class="text-sm text-earth-500 font-semibold mb-6 uppercase tracking-wide">Advanced Communal Effort</p>
+                <p class="text-stone-600 mb-6">A large-scale effort that teaches respect and intense teamwork. Teams manage large cuts and long-form traditional cooking for a grand feast.</p>
+                <a href="#booking" class="block w-full text-center bg-earth-800 text-white py-3 font-semibold hover:bg-earth-500 transition">Book Session</a>
+            </div>
+        </div>
+
+        <section id="booking" class="bg-earth-100 p-8 md:p-12 max-w-3xl mx-auto rounded-sm">
+            <h2 class="font-serif text-3xl text-earth-900 mb-6 text-center">Direct Program Booking</h2>
+            <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
+                <input type="hidden" name="access_key" value="85e0758a-b120-4a95-93e4-5f994ba4a1ee">
+                <input type="hidden" name="subject" value="New Program Booking Request">
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium text-earth-800 mb-1">Parent/Guardian Name</label>
+                        <input type="text" name="name" required class="w-full px-4 py-2 border border-stone-300 focus:ring-2 focus:ring-earth-500 outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-earth-800 mb-1">Email Address</label>
+                        <input type="email" name="email" required class="w-full px-4 py-2 border border-stone-300 focus:ring-2 focus:ring-earth-500 outline-none">
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium text-earth-800 mb-1">Number of Children (1-8)</label>
+                        <input type="number" name="children_count" min="1" max="8" required class="w-full px-4 py-2 border border-stone-300 focus:ring-2 focus:ring-earth-500 outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-earth-800 mb-1">Select Program</label>
+                        <select name="program" required class="w-full px-4 py-2 border border-stone-300 focus:ring-2 focus:ring-earth-500 outline-none bg-white">
+                            <option value="Chicken">Chicken Preparation</option>
+                            <option value="Goat">Goat Preparation</option>
+                            <option value="Cow">Cow Preparation</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit" class="w-full bg-earth-900 text-white font-bold py-3 hover:bg-earth-500 transition">Submit Booking Request</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-earth-900 text-earth-100 py-8 text-center mt-auto">
+        <p>&copy; 2026 Roots & Heritage. Preserving our traditions.</p>
+    </footer>
+</body>
+</html>

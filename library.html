@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library | African Heritage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = { theme: { extend: { colors: { earth: { 50: '#faf8f5', 100: '#f4ede4', 500: '#c28b5a', 800: '#5c4033', 900: '#38251e' } }, fontFamily: { serif: ['Merriweather', 'serif'], sans: ['Inter', 'sans-serif'] } } } }
+    </script>
+</head>
+<body class="bg-earth-50 text-stone-800 font-sans antialiased flex flex-col min-h-screen">
+
+    <nav class="bg-earth-900 text-earth-50 shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <a href="index.html" class="font-serif text-2xl font-bold tracking-wider text-earth-500">ROOTS & HERITAGE</a>
+                <div class="hidden md:flex space-x-8 font-medium">
+                    <a href="index.html" class="hover:text-earth-500 transition duration-300">Home</a>
+                    <a href="about.html" class="hover:text-earth-500 transition duration-300">About</a>
+                    <a href="pricing.html" class="hover:text-earth-500 transition duration-300">Programs</a>
+                    <a href="library.html" class="hover:text-earth-500 transition duration-300">Library</a>
+                    <a href="contact.html" class="hover:text-earth-500 transition duration-300">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow py-20 max-w-7xl mx-auto px-4">
+        
+        <div class="text-center mb-16">
+            <h1 class="font-serif text-4xl md:text-5xl text-earth-900 mb-4">Past Experiences</h1>
+            <p class="text-xl text-stone-600">A visual record of knowledge passed down to the next generation.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-20">
+            <div class="h-64 bg-earth-100 overflow-hidden"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?q=80&w=800&auto=format&fit=crop" alt="Cooking over fire" class="w-full h-full object-cover hover:scale-105 transition duration-500"></div>
+            <div class="h-64 bg-earth-100 overflow-hidden"><img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=800&auto=format&fit=crop" alt="Teamwork" class="w-full h-full object-cover hover:scale-105 transition duration-500"></div>
+            <div class="h-64 bg-earth-100 overflow-hidden"><img src="https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?q=80&w=800&auto=format&fit=crop" alt="Serving meals" class="w-full h-full object-cover hover:scale-105 transition duration-500"></div>
+            <div class="h-64 bg-earth-100 overflow-hidden"><img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=800&auto=format&fit=crop" alt="Preparation" class="w-full h-full object-cover hover:scale-105 transition duration-500"></div>
+            <div class="h-64 bg-earth-100 overflow-hidden"><img src="https://images.unsplash.com/photo-1526685418195-25b42d766795?q=80&w=800&auto=format&fit=crop" alt="Community gathering" class="w-full h-full object-cover hover:scale-105 transition duration-500"></div>
+            <div class="h-64 bg-earth-100 overflow-hidden bg-earth-900 flex items-center justify-center text-earth-50 font-serif text-xl p-6 text-center">
+                More moments captured in our CMS library.
+            </div>
+        </div>
+
+        <h2 class="font-serif text-3xl text-earth-900 mb-8 text-center border-t border-earth-100 pt-16">Words from Parents</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <blockquote class="bg-white p-8 border-l-4 border-earth-500 shadow-sm">
+                <p class="text-stone-600 italic mb-4">"Seeing my son work with his team to prepare a meal from scratch, right down to the slaughtering, brought tears to my eyes. This is exactly what our youth are missing today. True accountability and tradition."</p>
+                <footer class="font-bold text-earth-900">- Sarah M., Parent</footer>
+            </blockquote>
+            <blockquote class="bg-white p-8 border-l-4 border-earth-500 shadow-sm">
+                <p class="text-stone-600 italic mb-4">"The instructors don't do it for them. They supervise, they guide, but the kids do the work. The pride on my daughter's face when she served us the family meal was unmatched."</p>
+                <footer class="font-bold text-earth-900">- David T., Parent</footer>
+            </blockquote>
+        </div>
+
+    </main>
+
+    <footer class="bg-earth-900 text-earth-100 py-8 text-center mt-auto">
+        <p>&copy; 2026 Roots & Heritage. Preserving our traditions.</p>
+    </footer>
+</body>
+</html>
